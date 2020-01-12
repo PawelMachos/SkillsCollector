@@ -4,7 +4,7 @@ INSERT INTO skills (name) VALUES ('Programowanie obiektowe');
 INSERT INTO skills (name) VALUES ('Algorytmy i struktury danych');
 INSERT INTO skills (name) VALUES ('Strumienie i wyrażenia lambda');
 INSERT INTO skills (name) VALUES ('HTML i CSS');
-INSERT INTO skills (name) VALUES ('JvaScript');
+INSERT INTO skills (name) VALUES ('JavaScript');
 INSERT INTO skills (name) VALUES ('Servlety i JSP');
 INSERT INTO skills (name) VALUES ('JPA i Hibernate');
 INSERT INTO skills (name) VALUES ('Spring Framework');

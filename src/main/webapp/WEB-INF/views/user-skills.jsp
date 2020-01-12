@@ -21,6 +21,7 @@
     <tr>
         <th>Lp.</th>
         <th>Nazwa umiejętności</th>
+        <th>Opis umiejętności</th>
         <th>Poziom umiejętności</th>
     </tr>
 
@@ -28,7 +29,8 @@
     <tr>
             <td>${Lp.count}</td>
             <td>${skill.name}</td>
-            <td>${sources.attachedSkills.count}</td>
+            <td>${source.description}</td>
+            <td>${allSkills.value}</td>
     </tr>
         </c:forEach>
     </thead>
