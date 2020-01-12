@@ -47,7 +47,7 @@ public class RegistrationServlet extends HttpServlet {
         }else {
             req.setAttribute("user", user);
             req.setAttribute("error","Zajęty username.");
-            res.sendRedirect("/register.jsp");
+            req.getRequestDispatcher("/WEB-INF/views/register.jsp");
         }
 
         res.sendRedirect("/login");

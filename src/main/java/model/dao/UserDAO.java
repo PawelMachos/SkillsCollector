@@ -1,7 +1,9 @@
 package model.dao;
 
+import entities.Skill;
 import entities.User;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 
 import java.util.List;
 
@@ -33,6 +35,12 @@ public class UserDAO extends BaseDao {
                         .setParameter("username", username)
                         .getSingleResult() <= 0
         );
+    }
+
+    public List<Skill> getAllSkills(User user){
+        return super.produceInTransaction(session -> session.createQuery("SELECT ats FROM User u " +
+                "JOIN u.knownSources ks JOIN ks.attachedSkills ats WHERE u.id = :id",Skill.class).
+                setParameter("id", user.getId()).getResultList());
     }
 
     public List<User> getAll() {

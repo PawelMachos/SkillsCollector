@@ -35,8 +35,7 @@ public class LoginServlet extends HttpServlet {
             req.setAttribute("error",error);
             req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, resp);
         } else {
-            user.setUsername(username);
-            user.setPassword(password);
+            user = users.get(0);
 
             req.getSession().invalidate();
             req.getSession(true);

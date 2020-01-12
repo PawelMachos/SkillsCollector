@@ -32,7 +32,7 @@ public class AuthorizationFilter extends HttpFilter {
             }
         } else if(unprotectedPaths.contains(servletPath)){
             chain.doFilter(req,res);
-        } else{
+        } else if (!protectedPaths.contains(servletPath) && !unprotectedPaths.contains(servletPath)){
             res.sendError(500, "Nie ma takiej strony." );
         }
 
