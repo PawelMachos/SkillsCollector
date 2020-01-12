@@ -7,7 +7,7 @@ import java.util.List;
 
 public class UserDAO extends BaseDao {
 
-    protected UserDAO(SessionFactory sessionFactory) {
+    public UserDAO(SessionFactory sessionFactory) {
         super(sessionFactory);
     }
 

@@ -7,13 +7,6 @@
 --%>
 <%@ page isELIgnored="false" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Header</title>
-</head>
-<body>
-
 <div>
     <a href="/user/skills"> Umiejętności</a>
 </div>
@@ -37,6 +30,3 @@
 <div>
     <a href="/user/unknown-sources"> Nowe źródła wiedzy</a>
 </div>
-
-</body>
-</html>

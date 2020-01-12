@@ -8,19 +8,9 @@
 --%>
 <%@ page isELIgnored="false" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Footer</title>
-</head>
-<body>
-
 <div>
 <span>
     Paweł Machoś
 </span>&nbsp;
 <span>Rok: <%= LocalDate.now().getYear() %> <%=LocalTime.now()%></span>
 </div>
-
-</body>
-</html>
