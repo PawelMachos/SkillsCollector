@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.Set;
 
 @Table(name = "sources")
-@Entity(name = "Source")
+@Entity
 public class Source {
 
     @Id
