@@ -50,8 +50,6 @@ public class RegistrationServlet extends HttpServlet {
             res.sendRedirect("/register.jsp");
         }
 
-
-
         res.sendRedirect("/login");
     }
 

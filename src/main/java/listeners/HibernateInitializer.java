@@ -61,5 +61,11 @@ public class HibernateInitializer implements ServletContextListener {
         }
     }
 
+    @Override
+    public void contextDestroyed(ServletContextEvent sce){
+        SessionFactory sessionFactory = (SessionFactory) sce.getServletContext().getAttribute("session_factory");
+        sessionFactory.close();
+    }
+
 
 }
